@@ -53,6 +53,7 @@ function draw() {
     //updateHeight(0, -10);
     balloon.addAnimation("hotAirBalloon",balloonImage2);
     balloon.y = balloon.y - 10;
+    balloon.scale = balloon.scale-0.01; 
 
   }
 
@@ -60,9 +61,10 @@ function draw() {
   {
    // updateHeight(0, +10);
     balloon.addAnimation("hotAirBalloon",balloonImage2);
-    balloon.y = balloon.y+10;  
+    balloon.y = balloon.y+10;
+    balloon.scale = balloon.scale+0.01;  
   }
-
+ 
   drawSprites();
   fill(0);
   stroke("white");
